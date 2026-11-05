@@ -3,6 +3,7 @@ import sys
 import json
 from config import APP_NAME, DEFAULT_LANGUAGE
 from about import about
+from download_menu import download_menu
 # from settings import settings
 
 def load_locale(lang):
@@ -27,7 +28,8 @@ def main():
         main_menu = input(': ')
 
         if main_menu == '1':
-            pass
+            os.system('cls')
+            download_menu(t)
         
         #elif main_menu == '2':
         #    settings()
