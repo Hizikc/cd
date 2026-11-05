@@ -25,7 +25,7 @@ def main():
         print()
         
         
-        main_menu = input(': ')
+        main_menu = input(':')
 
         if main_menu == '1':
             os.system('cls')
