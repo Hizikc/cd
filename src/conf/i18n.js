@@ -5,7 +5,7 @@ let currentLang = DEFAULT_LANGUAGE;
 let translations = loadTranslations(currentLang);
 
 function loadTranslations(lang) {
-    const fileUrl = new URl(`../src/locales/${lang}.json`, import.meta.url);
+    const fileUrl = new URL(`../locales/${lang}.json`, import.meta.url);
     const rawData = fs.readFileSync(fileUrl, 'utf-8');
     return JSON.parse(rawData);
 }
