@@ -1,7 +1,5 @@
 node_modules/
 .env
 npm-debug.log*
-src/config.py
-src/about.py
 note.md
-ds/
+**/*.py
