@@ -8,11 +8,11 @@ async function main() {
         console.clear();
         console.log(APP_NAME)
         console.log()
-        console.log(`${1.}: ${t('download')}`)
+        console.log(`1: ${t('download')}`)
         console.log()
-        console.log(`${2.}: ${t('about')}`)
+        console.log(`2: ${t('about')}`)
         console.log()
-        console.log(`${0.}: ${t('exit')}`)
+        console.log(`0: ${t('exit')}`)
 
         const main_menu = await input('>')
 
