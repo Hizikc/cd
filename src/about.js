@@ -1,5 +1,5 @@
 import { input } from './utils/input.js';
-import { t, setLanguage } from './conf/i18n.js';
+import { t } from './conf/i18n.js';
 import { APP_NAME, VERSION, DEVELOPER } from './conf/config.js';
 
 export async function about() {
