@@ -2,6 +2,7 @@ import { input } from './utils/input.js';
 import { clear } from './utils/clear.js';
 import { t } from './conf/i18n.js';
 import { APP_NAME } from './conf/config.js';
+import { audio_download } from './audio_download.js';
 
 export async function download_menu() {
     while (true) {
@@ -17,7 +18,7 @@ export async function download_menu() {
 
         if (download_menu === '1') {
             clear();
-            
+            await audio_download();
         }
 
         else if (download_menu === '2') {
