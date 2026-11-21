@@ -3,6 +3,7 @@ import { clear } from './utils/clear.js';
 import { t } from './conf/i18n.js';
 import { APP_NAME } from './conf/config.js';
 import { audio_download } from './audio_download.js';
+import { video_download } from './video_download.js';
 
 export async function download_menu() {
     while (true) {
@@ -23,6 +24,7 @@ export async function download_menu() {
 
         else if (download_menu === '2') {
             clear();
+            await video_download();
             
         }
 
