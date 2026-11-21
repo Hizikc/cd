@@ -15,6 +15,11 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/main.js"
+    "start": "node src/main.js",
+    "build": "esbuild src/main.js --bundle --platform=node --format=cjs --outfile=dist/bundle.cjs && node --experimental-sea-config sea-config.json && powershell -Command \"Copy-Item (Get-Command node).Source dist/cd.exe -Force\" && postject dist/cd.exe NODE_SEA_BLOB dist/sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
   }
 }
