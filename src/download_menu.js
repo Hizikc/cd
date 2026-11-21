@@ -1,5 +1,5 @@
 import { input } from './utils/input.js';
-import { clear } from './utils/clear.js'
+import { clear } from './utils/clear.js';
 import { t } from './conf/i18n.js';
 import { APP_NAME } from './conf/config.js';
 

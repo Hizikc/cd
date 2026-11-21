@@ -1,6 +1,6 @@
 import { input, closeInput } from './utils/input.js';
 import { t } from './conf/i18n.js';
-import { clear } from './utils/clear.js'
+import { clear } from './utils/clear.js';
 import { about } from './about.js';
 import { APP_NAME } from './conf/config.js';
 import { download_menu } from './download_menu.js';
