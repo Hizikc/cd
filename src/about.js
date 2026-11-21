@@ -19,5 +19,9 @@ export async function about() {
         console.clear();
         return;
         }
+
+        else {
+            continue;
+        }
     }
 }

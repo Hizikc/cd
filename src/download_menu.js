@@ -28,6 +28,10 @@ export async function download_menu() {
         else if (download_menu === '0') {
             clear()
             return
-        } 
+        }
+        
+        else {
+            continue;
+        }
     }
 }

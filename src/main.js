@@ -33,6 +33,10 @@ async function main() {
             closeInput();
             process.exit(0);
         }
+
+        else {
+            continue;
+        }
     }
 }
 
