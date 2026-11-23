@@ -12,7 +12,7 @@ function loadTranslations(lang) {
 
 export function setLanguage(lang) {
     currentLang = Lang;
-    translations = loadTranslations(Lang);
+    translations = loadTranslations(lang);
 }
 
 export function t(key) {
